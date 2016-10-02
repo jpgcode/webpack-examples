@@ -2,6 +2,7 @@ const path    = require('path');
 const webpack = require('webpack');
 
 const webpackConfig = {
+	devtool: 'cheap-eval-source-map',
 	entry: './app.js',
   	output: { 
 	path: `${__dirname}/dist`,

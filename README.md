@@ -35,6 +35,13 @@ You can have 1 or more entry points, they can be added as an array, and they wil
 ###output
 The output is the path and file that it will be compiled with all your code, that comes from your modules.
 
+###devtool
+You have several options here, but the most used are: <br />
+- `sourcemap` it outputs the original source code. and it outputs a sourcemap file. It is recomended for production. <br />
+- `cheap-eval-source-map` it's slower but it outputs transformed code, it is recommended for development <br / >
+- `eval` it's faster Each module is executed with eval and //@ sourceURL.
+
+[https://webpack.github.io/docs/configuration.html#devtool](https://webpack.github.io/docs/configuration.html#devtool)
 
 ##How can I use it for compiling my JS and use babel?
 
@@ -90,7 +97,13 @@ It also provide a hot module replacement which reload the JS when there are chan
 Loaders allow you to preprocess files as you require() or “load” them. Loaders are kind of like “tasks” are in other build tools, and provide a powerful way to handle frontend build steps. Loaders can transform files from a different language like, CoffeeScript to JavaScript, or inline images as data URLs. Loaders even allow you to do things like require() css files right in your JavaScript!
 
 ###Preloaders
+They will run first in you build process. You can use them for tasks like linting you JS before its transpiled.
+
 ###Loaders
+The normal compiling process, you can transpile here.
+
 ###PostLoaders
+You can use things like post-processors in here.
 
 ##Webpack Plugins
+You can extend webpack functionality using plugins.

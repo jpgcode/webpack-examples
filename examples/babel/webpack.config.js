@@ -1,7 +1,8 @@
 const path    = require('path');
 const webpack = require('webpack');
 
-const cfg = {
+const webpackConfig = {
+	devtool: 'cheap-eval-source-map',
   	entry: './app.js',
   	output: { 
     	path: `${__dirname}/dist`,
@@ -14,11 +15,11 @@ const cfg = {
 	  			exclude: /node_modules/, 
 	  			loader: 'babel-loader' ,
 	  			query: {
-			      presets: ['es2015', 'react']
+			      presets: ['es2015']
 			    }
 	  		}
 	  	]
 	}
 };
 
-module.exports = cfg;
+module.exports = webpackConfig;
