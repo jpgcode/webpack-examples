@@ -1,0 +1,16 @@
+{
+  "name": "webpackstarter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --progress --colors --hot --inline --open --content-base dist/",
+    "build": "webpack -p"
+  },
+  "author": "Jose Pablo Granados",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^1.13.2"
+  }
+}
