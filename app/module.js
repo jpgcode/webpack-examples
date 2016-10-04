@@ -1,3 +1,6 @@
+//Stylesheets
+require('./module.scss');
+
 //Public function
 export function init(txt){
 	logMe(txt)

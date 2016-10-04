@@ -17,7 +17,11 @@ const webpackConfig = {
 	  			query: {
 			      presets: ['es2015']
 			    }
-	  		}
+	  		},
+	  		{
+				test: /\.scss$/,
+				loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
+			}
 	  	]
 	}
 };

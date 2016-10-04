@@ -3,6 +3,8 @@
 ##What is webpack?
 Is a Module bundler, very similar of Browserify. But webpack needs a little more configuration.
 
+https://medium.com/@dabit3/beginner-s-guide-to-webpack-b1f1a3638460#.n13n1ojw6
+
 ##How it works?
 
 - Install web pack globally to have the command line tool available, then install in your project locally, and save in the package.json <br />
@@ -104,6 +106,33 @@ The normal compiling process, you can transpile here.
 
 ###PostLoaders
 You can use things like post-processors in here.
+
+###Using css as modules
+The main problem with CSS is that it's always global. On big projects we get issues when there are some classes conflicting with others. We can take advantage of webpack to import our CSS files as needed and do not have them all in the <head> of the site.
+
+[http://glenmaddern.com/articles/css-modules](http://glenmaddern.com/articles/css-modules)
+[https://www.bensmithett.com/smarter-css-builds-with-webpack/](https://www.bensmithett.com/smarter-css-builds-with-webpack/)
+
+###Using sass with webpack
+You can use sass or any other CSS pre processor with Webpack very easily, remember that this is a bit different since we are using a module system, webpack allows us to add the CSS dinamycally using our module system as well.
+
+[https://github.com/jtangelder/sass-loader](https://github.com/jtangelder/sass-loader)
+[https://shellmonger.com/2016/01/19/adding-sass-support-to-webpack/](https://shellmonger.com/2016/01/19/adding-sass-support-to-webpack/)
+
+Make sure you install the 4 modules required:
+
+**sass-loader**
+converts scss files to css files.
+
+**node-sass**
+It is the module that sass uses to compile.
+
+**css-loader**
+loads up the css.
+
+**style-loader**
+convert the css into inline stylesheets.
+
 
 ##Webpack Plugins
 You can extend webpack functionality using plugins.
