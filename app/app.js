@@ -1,5 +1,5 @@
-import {init} from './module';
+import {init} from './components/carousel/carousel';
 
-init('sdsd');
+init('Init carousel component');
 
 //logMe('222');

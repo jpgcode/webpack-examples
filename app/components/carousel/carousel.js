@@ -1,5 +1,5 @@
 //Stylesheets
-require('./module.scss');
+require('./carousel.scss');
 
 //Public function
 export function init(txt){

@@ -113,6 +113,9 @@ The main problem with CSS is that it's always global. On big projects we get iss
 [http://glenmaddern.com/articles/css-modules](http://glenmaddern.com/articles/css-modules)
 [https://www.bensmithett.com/smarter-css-builds-with-webpack/](https://www.bensmithett.com/smarter-css-builds-with-webpack/)
 
+##How do you split your CSS into a separate file?
+You can use the webpack extractTextPlugin, this should be added in PROD mode only because it will make HMR to not work correctly.
+
 ###Using sass with webpack
 You can use sass or any other CSS pre processor with Webpack very easily, remember that this is a bit different since we are using a module system, webpack allows us to add the CSS dinamycally using our module system as well.
 
